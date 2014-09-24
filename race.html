@@ -8,33 +8,34 @@
   <h1 id="header"> Welcome to the racetrack! </h1>
   <h2> Meet the participants...</h2>
     <ul>
-      <li class="racers" id="racer1"> Rocky the Rabbit </li>
-      <li class="racers" id="racer2"> Myrtle the Turtle </li>
-      <li class="racers" id="racer3"> <button id="create">Click to create racer</button> </li>
+      <li class="participants" id="racer1"> Rocky the Rabbit </li>
+      <li class="participants" id="racer2"> Myrtle the Turtle </li>
+      <li class="participants" id="racer3"> <button id="create">Click to create racer</button> </li>
 
       <!-- Form to get user racer info -->
       <form class="hidden" id="userStats" action="file:///Users/Ryan/repos/racegame/race.html">
         <fieldset>
-          <legend>User racer</legend>
+          <legend>User Racer</legend>
           <label id="userName">Name:
-            <input type="text">
+            <input type="text" name="name">
           </label>
           <label id="userSpeed">Speed 0-9:
-            <input type="integer">
+            <input type="integer" name="speed">
           </label>
           <label id="userFocus">Focus 0-9:
-            <input type="integer">
+            <input type="integer" name="focus">
           </label>
           <input type="submit" value="Submit">
         </fieldset>
       </form>
 
   <button id="race">Let's Race!</button>
-
-  <div id="rabbit"></div>
-  <div id="turtle"></div>
-  <div id="user"></div>
-
+<section>
+  <div id="rabbit" class="racers">Rabbit</div>
+  <div id="turtle" class="racers">Turtle</div>
+  <div id="user" class="racers">User</div>
+</section>
+<h3 id="winner"></h3>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="js/race.js"></script>
 </body>
