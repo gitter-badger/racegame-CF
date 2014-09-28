@@ -13,34 +13,27 @@
       <li class="participants" id="racer3"> <button id="create">Click to create racer</button> </li>
 
       <!-- Form to get user racer info -->
-      <form class="hidden" id="userStats" action="file:///Users/Ryan/repos/racegame/race.html">
-        <fieldset>
-          <legend>User Racer</legend>
-          <label id="userName">Name:
-            <input type="text" name="name">
-          </label>
-          <label id="userSpeed">Speed 0-9:
-            <input type="integer" name="speed">
-          </label>
-          <label id="userFocus">Focus 0-9:
-            <input type="integer" name="focus">
-          </label>
-          <input type="submit" value="Submit">
-        </fieldset>
+      <form class="hidden" id="userStats">
+          Name:
+          <input id="userName" type="text" name="name">
+          Speed 0-9:
+          <input id="userSpeed" type="integer" name="speed">
+          Focus 0-9:
+          <input id="userFocus" type="integer" name="focus">
+          <input type="submit">
       </form>
 
   <button id="race">Let's Race!</button>
 <section>
   <div id="rabbit" class="racers">Rabbit</div>
   <div id="turtle" class="racers">Turtle</div>
-  <div id="user" class="racers">User</div>
+  <div id="userID" class="racers"></div>
 </section>
 <h3 id="winner"></h3>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="js/race.js"></script>
 </body>
 </html>
-
 
 
 
